@@ -884,6 +884,7 @@ function s:handlerBase.onInsertLeave()
     call l9#tempvariables#setList(s:TEMP_VARIABLES_GROUP, tempVars)
     call fuf#launch(self.reservedMode, self.lastPattern, self.partialMatching)
   endif
+  set cmdheight=1
 endfunction
 
 "
